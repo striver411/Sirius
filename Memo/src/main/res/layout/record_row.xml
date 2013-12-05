@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:focusable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:clickable="true"
+        android:onClick="onTodoPinClicked"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="New TextView"
+        android:focusable="true"
+        android:textSize="48px"
+        android:background="@android:color/transparent"
+        android:imeOptions="actionDone"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/playImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:focusable="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:onClick="onTodoPinClicked"
+        android:src="@drawable/ic_launcher" />
+
+</LinearLayout>
